@@ -1,0 +1,171 @@
+.main {
+  padding: 15px;
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.main > h4 {
+  color: #5f6380;
+  align-self: flex-start;
+}
+
+.main > hr {
+  width: 100%;
+  border: 1px solid #dee1ea;
+}
+
+.details {
+  width: 100%;
+  margin: 2% 0 2% 0;
+  display: flex;
+  column-gap: 15px;
+}
+
+.details > div {
+  color: #939393;
+}
+
+.details > div > label {
+  font-weight: bold;
+}
+
+.label {
+  padding: 10px;
+  display: flex;
+  border: 2px solid black;
+}
+
+.label > div:first-child {
+  text-align: center;
+  width: 240px;
+  position: absolute;
+  bottom: 305px;
+  left: 70px;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  border-top: 3px solid black;
+}
+
+.left {
+  text-align: justify;
+  font-size: 7pt;
+  font-weight: 500;
+  margin-left: 40px;
+  width: 240px;
+}
+
+.left > div > span:first-child {
+  font-weight: bold;
+}
+
+.left > div:last-child {
+  margin-top: 10%;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.middle > h3 {
+  text-align: center;
+  width: 150px;
+}
+
+.middle > span {
+  text-align: center;
+  width: 200px;
+  font-weight: 500;
+  font-size: 9pt;
+  margin-top: 70px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.right > img {
+  border: 2px solid black;
+  padding: 2px;
+  width: 245px;
+}
+
+.right > span {
+  margin: 2px 0 0 5px;
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.link {
+  width: 80px;
+  text-align: center;
+  align-self: flex-end;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 8px;
+  color: white;
+  font-size: 10pt;
+  background-color: #8597ad;
+}
+
+.link:hover {
+  color: white;
+  background-color: #bdbdc6 !important;
+}
+
+/* Media Query 350px - 850px */
+@media only screen and (min-width: 350px) and (max-width: 850px) {
+  .main {
+    padding: 0;
+    width: 100%;
+    font-size: 10pt;
+  }
+
+  .label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label > div:first-child {
+    position: relative;
+    width: 105%;
+    bottom: 0;
+    left: -12px;
+    padding-bottom: 2px;
+    transform: rotate(0deg);
+    border-top: 0;
+    border-bottom: 3px solid black;
+  }
+
+  .left,
+  .middle {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .right {
+    width: 80%;
+    margin: 10px auto;
+    align-items: center;
+  }
+
+  .right > span {
+    margin: 2px 130px 0 0;
+  }
+}
+
+/* Media Query 600px - 850px */
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+  .main {
+    width: 500px;
+  }
+}

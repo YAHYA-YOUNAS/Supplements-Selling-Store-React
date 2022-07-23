@@ -1,0 +1,25 @@
+.main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main > input {
+  margin-top: 5px;
+  border-radius: 3px;
+  border: 3px solid rgb(207, 206, 206);
+  outline: none;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.main > input:focus {
+  border: 3px solid rgb(163, 162, 162);
+}
+
+/* Media Query 600px - 1200px */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  .main {
+    width: 100%;
+  }
+}

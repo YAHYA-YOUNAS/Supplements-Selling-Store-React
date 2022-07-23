@@ -1,0 +1,71 @@
+.main {
+  padding: 20px;
+  text-align: center;
+  width: 700px;
+  color: #939393;
+}
+
+.main > h2 {
+  color: #5f6380;
+}
+
+.main > p {
+  width: 90%;
+  text-align: center;
+  margin: 5% auto;
+  padding: 15px;
+  border: 1px solid #dee1ea;
+}
+
+.uploadFile {
+  display: flex;
+  column-gap: 150px;
+  width: 98%;
+  padding: 10px;
+  margin: 5% auto;
+}
+
+.main > button {
+  float: right;
+  width: 100px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 10pt;
+  background-color: #51ce10;
+}
+
+.main > button:hover {
+  color: white;
+  background-color: #bdbdc6 !important;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    padding: 0;
+    text-align: center;
+    width: 270px;
+    font-size: 10pt;
+  }
+
+  .uploadFile {
+    width: 80%;
+    margin: 2% auto;
+  }
+  .main > button {
+    float: none;
+    width: 100px;
+    margin-top: 10%;
+  }
+}
+
+/* Media Query 601px - 850px */
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+  .main {
+    padding: 0;
+    width: 500px;
+  }
+}

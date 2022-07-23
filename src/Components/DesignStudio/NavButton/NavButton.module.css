@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+  border: none;
+  padding: 15px 20px;
+  color: #5f6380;
+  background-color: #dee1ea;
+}
+
+.button:hover {
+  color: white;
+  background-color: #64e744;
+}
+
+.active {
+  cursor: pointer;
+  border: none;
+  padding: 15px 20px;
+  color: #5f6380;
+  font-weight: bold;
+  border-bottom: 6px solid #64e744;
+  margin-top: -6px;
+  background-color: white;
+}

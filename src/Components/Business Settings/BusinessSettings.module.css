@@ -1,0 +1,218 @@
+.main {
+  box-sizing: border-box;
+  width: 82%;
+  float: right;
+  padding: 20px;
+  color: #939393;
+}
+
+.heading {
+  width: fit-content;
+  margin-left: 5%;
+  color: #86949f;
+}
+
+.outer {
+  margin: 5% 5% 0 2%;
+  background-color: #ecf1f7;
+  padding: 30px;
+}
+
+.form {
+  background-color: white;
+  padding: 50px;
+}
+
+.form > p {
+  margin-bottom: 5%;
+}
+
+.note {
+  padding: 5px 5px 5px 0;
+  color: #5f6380;
+  font-weight: 500;
+}
+
+.uploadLogo {
+  padding: 5px 5px 5px 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.uploadLogo > input {
+  cursor: pointer;
+}
+
+.uploadLogo > input::file-selector-button {
+  cursor: pointer;
+  color: #5f6380;
+  padding: 0.3em;
+  border: thin solid grey;
+  border-radius: 5px;
+}
+.inputSection {
+  width: 65%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputSection > label {
+  color: #939393;
+  font-weight: 500;
+}
+
+.inputSection > input {
+  box-sizing: border-box;
+  width: 75%;
+  border: 2px solid #dee1ea;
+  outline: none;
+  padding: 5px;
+}
+
+.inputSection > input:focus {
+  border: 2px solid rgb(163, 162, 162);
+}
+
+.form > button {
+  margin-top: 4%;
+  cursor: pointer;
+  background-color: #939393;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 80px;
+}
+
+.form > button:hover {
+  background-color: #51ce10;
+  color: white;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    width: 100%;
+    float: none;
+    margin-top: 70px;
+    font-size: 10pt;
+    text-align: center;
+  }
+
+  .outer {
+    margin: 5% 5% 0 2%;
+    padding: 20px;
+  }
+
+  .form {
+    padding: 10px;
+  }
+
+  .uploadLogo {
+    padding: 0;
+    width: 90%;
+    margin: 10% auto;
+    row-gap: 10px;
+    flex-direction: column;
+  }
+
+  .uploadLogo > input {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .uploadLogo > input::file-selector-button {
+    margin-top: 10px;
+    font-size: 9pt;
+  }
+
+  .inputSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .inputSection > input {
+    width: 100%;
+  }
+
+  .form > button {
+    width: 100px;
+  }
+}
+
+/* Media Query 601px - 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .main {
+    width: 66%;
+    text-align: center;
+    font-size: 10pt;
+  }
+
+  .outer {
+    margin: 5% 5% 0 2%;
+  }
+
+  .form {
+    padding: 40px;
+  }
+
+  .uploadLogo {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    row-gap: 10px;
+    flex-direction: column;
+  }
+
+  .uploadLogo > input::file-selector-button {
+    margin-top: 10px;
+  }
+
+  .uploadLogo > input {
+    width: 95%;
+  }
+
+  .inputSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .inputSection > input {
+    width: 100%;
+  }
+
+  .form > button {
+    width: 100px;
+    margin-top: 10%;
+    padding: 8px 10px;
+  }
+}
+
+/* Media Query 769px - 1200px */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .main {
+    width: 70%;
+  }
+  .uploadLogo,
+  .uploadLogo > input,
+  .inputSection {
+    width: 100%;
+  }
+
+  .heading {
+    margin-left: 0;
+  }
+
+  .inputSection > input {
+    width: 60%;
+  }
+}

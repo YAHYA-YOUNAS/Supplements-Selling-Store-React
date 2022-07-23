@@ -1,0 +1,73 @@
+.main {
+  padding: 20px;
+  text-align: center;
+  width: 700px;
+  color: #939393;
+}
+
+.main > h2 {
+  color: #5f6380;
+}
+
+.main p {
+  margin-top: 5%;
+  padding: 15px;
+  border: 1px solid #dee1ea;
+}
+
+.main > div {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 30px;
+}
+
+.main > div > button,
+.link {
+  width: 250px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 10pt;
+  background-color: #51ce10;
+}
+
+.link {
+  background-color: #8597ad;
+}
+
+.main > div > button:hover,
+.link:hover {
+  color: white;
+  background-color: #bdbdc6 !important;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    width: 230px;
+    font-size: 10pt;
+  }
+
+  .main > div {
+    margin-top: 15%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .main > div > button,
+  .link {
+    width: fit-content;
+  }
+}
+
+/* Media Query 600px - 850px */
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+  .main {
+    padding: 0;
+    width: 500px;
+  }
+}

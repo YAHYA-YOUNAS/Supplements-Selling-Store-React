@@ -1,0 +1,18 @@
+.main {
+  text-align: center;
+  width: 400px;
+  height: 200px;
+  color: #939393;
+}
+
+.main p {
+  margin-top: 30px;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    width: 270px;
+    font-size: 10pt;
+  }
+}

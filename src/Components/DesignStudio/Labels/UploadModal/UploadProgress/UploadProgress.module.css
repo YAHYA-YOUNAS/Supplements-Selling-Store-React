@@ -1,0 +1,79 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.progressContainer {
+  width: 100%;
+  color: #363a43;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 9px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #363a43;
+}
+
+.fileName {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.uploadList {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f7f7f7;
+  border: 0.1rem solid #cbd5e1;
+  border-radius: 0.2rem;
+  padding: 10px;
+}
+
+.progressText {
+  color: #7eb631;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#uploadButton {
+  position: absolute;
+  bottom: -32%;
+  left: 10%;
+  width: 100px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #8b8ea3;
+}
+
+#uploadButton:hover {
+  opacity: 0.8;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .uploadList {
+    width: 90%;
+  }
+
+  .fileName {
+    column-gap: 15px;
+  }
+
+  #uploadButton {
+    font-size: 9pt;
+    bottom: -8%;
+    left: 27%;
+  }
+}

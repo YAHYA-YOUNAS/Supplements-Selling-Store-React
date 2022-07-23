@@ -1,0 +1,36 @@
+.main {
+  text-align: center;
+  width: 500px;
+  color: #939393;
+}
+
+.main > h2,
+.main > h4 {
+  color: #5f6380;
+}
+
+.main > button {
+  width: 120px;
+  cursor: pointer;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  background-color: #51ce10;
+}
+
+.main > button:hover {
+  color: white;
+  background-color: #bdbdc6 !important;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    width: 270px;
+    font-size: 10pt;
+  }
+  .main > h4 {
+    font-size: 9pt;
+  }
+}

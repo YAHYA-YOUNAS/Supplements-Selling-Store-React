@@ -1,0 +1,88 @@
+.main {
+  box-sizing: border-box;
+  width: 82%;
+  float: right;
+  padding: 20px;
+}
+
+.heading {
+  width: fit-content;
+  margin-left: 5%;
+  color: #86949f;
+}
+
+.products {
+  width: 95%;
+  margin: 0 auto;
+  padding: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px 25px;
+  /* height: 800px; */
+  /* overflow-y: scroll;
+  scroll-behavior: smooth; */
+}
+
+.products::-webkit-scrollbar {
+  width: 5px;
+}
+
+.products::-webkit-scrollbar-thumb {
+  background-color: #939393;
+  border-radius: 20px;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    width: 100%;
+    float: none;
+    margin-top: 70px;
+    font-size: 10pt;
+  }
+
+  .products {
+    justify-content: space-evenly;
+    height: 730px;
+    padding: 5px;
+  }
+
+  .products::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Media Query 601px - 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .main {
+    width: 66%;
+    padding: 15px;
+    font-size: 10pt;
+  }
+
+  .products {
+    justify-content: space-evenly;
+    height: 730px;
+    padding: 5px;
+  }
+
+  .products::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Media Query 769px - 1200px */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .main {
+    width: 70%;
+  }
+  .heading {
+    margin-left: 0;
+  }
+
+  .products::-webkit-scrollbar {
+    display: none;
+  }
+}

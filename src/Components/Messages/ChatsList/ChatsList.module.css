@@ -1,0 +1,112 @@
+.chatList {
+  background-color: white;
+  color: #5f6380;
+  width: 30%;
+  border-radius: 40px 0 0 20px;
+  box-shadow: 0px 0px 10px 0px rgba(240, 234, 234, 0.7);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(240, 234, 234, 0.7);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(240, 234, 234, 0.7);
+}
+
+.chatList > h3 {
+  color: #939393;
+  padding-left: 20px;
+}
+
+.chatInfo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px 5px 5px 10px;
+}
+.chatInfo:hover {
+  background-color: #dee1ea;
+}
+.chatInfo > img {
+  background-color: rgb(233, 231, 231);
+  border-radius: 50%;
+  width: 50px;
+}
+
+.chatInfo > div {
+  padding: 5px;
+  width: 100%;
+}
+
+.chatInfo > div > span:first-child {
+  font-weight: bold;
+}
+
+.chatInfo > div > span:nth-child(3) {
+  color: #939393;
+}
+
+.chatInfo > div > span:last-child {
+  float: right;
+  color: #939393;
+}
+
+.status {
+  margin: 30px 8px 0 -8px;
+  color: #64e744;
+  font-size: 22px;
+}
+
+/* Media Query 350px - 768px */
+@media only screen and (min-width: 350px) and (max-width: 768px) {
+  .chatList {
+    width: 92%;
+    border-radius: 40px 0 0 0px;
+    font-size: 10pt;
+    font-weight: 400;
+    padding-left: 1px;
+  }
+
+  .chatList > div {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    display: flex;
+  }
+
+  .chatList > div::-webkit-scrollbar {
+    display: none;
+  }
+
+  .chatInfo {
+    border: 1px solid #dee1ea;
+  }
+
+  .chatInfo > img {
+    width: 35px;
+  }
+
+  .chatInfo > div > span:nth-child(3),
+  .chatInfo > div > span:nth-child(4) {
+    display: none;
+  }
+
+  .status {
+    font-size: 16px;
+  }
+}
+
+/* Media Query 601px - 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .chatList {
+    width: 98%;
+  }
+}
+
+/* Media Query 769px - 1080px */
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+  .chatList {
+    width: 40%;
+  }
+
+  .chatInfo > div > span:nth-child(3),
+  .chatInfo > div > span:nth-child(4) {
+    display: none;
+  }
+}

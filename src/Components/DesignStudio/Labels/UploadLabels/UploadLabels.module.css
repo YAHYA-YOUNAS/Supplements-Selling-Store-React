@@ -1,0 +1,236 @@
+.main {
+  padding: 15px;
+  margin-top: -20px;
+  background-color: #ecf1f7;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.main > h4 {
+  color: #5f6380;
+}
+
+.searchBar {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid rgb(207, 206, 206);
+}
+
+.searchBar > input {
+  width: 100%;
+  border: none;
+  padding: 15px;
+}
+
+.searchBar > input:focus {
+  outline: none;
+}
+
+.searchBar > button {
+  background-color: transparent;
+  border: none;
+}
+
+.icon {
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #51ce10;
+}
+
+.labels {
+  padding: 0 10px;
+}
+
+.labels > table {
+  width: 100%;
+}
+
+.labels > table thead,
+.labels > table tbody tr {
+  display: table;
+  table-layout: fixed;
+}
+
+.labels > table thead {
+  width: 100%;
+  margin-left: -100px;
+}
+
+.labels > table tbody {
+  display: block;
+  max-height: 280px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.labels > table tbody::-webkit-scrollbar {
+  width: 5px;
+}
+
+.labels > table tbody::-webkit-scrollbar-thumb {
+  background-color: #939393;
+  border-radius: 20px;
+}
+
+.labels > table tbody tr {
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: 1px solid #939393;
+}
+
+.labels > table > thead th {
+  color: #5f6380;
+  font-weight: 500;
+}
+.labels > table > tbody td {
+  padding: 10px;
+}
+
+.labels > table > tbody td:first-child {
+  padding-left: 30px;
+}
+
+.labels > table > tbody td:last-child {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.uploadButton,
+.setPriceButton {
+  cursor: pointer;
+  width: 80px;
+  border-radius: 20px;
+  padding: 10px;
+  color: #2c74dd;
+  border: 2px solid #2c74dd;
+}
+
+.setPriceButton {
+  color: #c52cdb;
+  border: 2px solid #c52cdb;
+}
+
+.uploadButton:hover {
+  color: white;
+  background-color: #2c74dd;
+}
+
+.setPriceButton:hover {
+  color: white;
+  background-color: #c52cdb;
+}
+
+.button {
+  width: 150px;
+  cursor: pointer;
+  background-color: #51ce10;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-left: 2%;
+}
+
+.button:hover {
+  background-color: #bdbdc6 !important;
+}
+
+/* Media Query 350px - 768px */
+@media only screen and (min-width: 350px) and (max-width: 768px) {
+  .main {
+    width: 100%;
+    margin-left: -15px;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+  .labels {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .labels > table {
+    border-spacing: 0;
+  }
+
+  .labels > table thead,
+  .labels > table tbody tr {
+    width: 100%;
+  }
+
+  .labels > table thead {
+    margin-left: -40px;
+  }
+
+  .labels > table > tbody td:first-child {
+    padding-left: 0px;
+  }
+
+  .labels > table > tbody td:last-child {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .uploadButton,
+  .setPriceButton {
+    font-size: 9pt;
+    width: fit-content;
+  }
+
+  .button {
+    margin-top: 5%;
+  }
+}
+
+/* Media Query 601px - 1200px */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .main {
+    padding: 15px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 10pt;
+  }
+
+  .main > h4 {
+    text-align: justify;
+  }
+
+  .searchBar {
+    width: 100%;
+  }
+
+  .button {
+    width: fit-content;
+  }
+}
+
+/* Media Query 769px - 1200px */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .labels > table thead,
+  .labels > table tbody tr {
+    width: 100%;
+  }
+
+  .labels > table thead {
+    margin-left: -10px;
+  }
+
+  .labels > table > tbody td:first-child {
+    padding-left: 20px;
+  }
+
+  .labels > table > tbody td:last-child {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+}

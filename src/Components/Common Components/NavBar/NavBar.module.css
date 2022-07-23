@@ -1,0 +1,233 @@
+.main {
+  height: 70px;
+  background-color: white;
+  color: gray !important;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 8px 0px rgba(190, 190, 190, 0.4);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(190, 190, 190, 0.4);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(190, 190, 190, 0.4);
+}
+
+.responsiveIcon {
+  display: none;
+}
+
+.notiMessages {
+  color: gray;
+  width: 100%;
+  display: flex;
+  border-right: 2px dotted #64e744;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.notiMessages > div {
+  position: relative;
+}
+
+.notiBox {
+  z-index: 999;
+  position: absolute;
+  top: 7%;
+  left: 55%;
+  background-color: white;
+  height: fit-content;
+  width: 270px;
+  padding: 5px;
+  box-shadow: 1px 1px 8px 3px rgba(194, 191, 191, 0.4);
+  -webkit-box-shadow: 1px 1px 8px 3px rgba(194, 191, 191, 0.4);
+  -moz-box-shadow: 1px 1px 8px 3px rgba(194, 191, 191, 0.4);
+}
+
+.notification {
+  cursor: pointer;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.notification:hover {
+  border-radius: 5px;
+  background-color: #dee1ea;
+}
+
+.notiTitle {
+  color: #939393;
+  font-weight: 500;
+}
+
+.notiCount {
+  font-size: 20px;
+  color: red;
+  position: absolute;
+  bottom: 11px;
+  right: -9px;
+}
+
+.messageCount {
+  font-size: 20px;
+  color: red;
+  float: right;
+  margin-left: -3px;
+  margin-top: -2px;
+}
+
+.description,
+.time {
+  font-weight: lighter;
+  font-size: 11pt;
+}
+
+.time {
+  color: darkgray;
+  font-weight: bold;
+}
+
+.profile {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logout {
+  text-align: center;
+  position: absolute;
+  top: 7.5%;
+  left: 89%;
+  background-color: white;
+  width: 100px;
+  padding: 15px;
+  box-shadow: 5px 5px 8px 3px rgba(194, 191, 191, 0.8);
+  -webkit-box-shadow: 5px 5px 8px 3px rgba(194, 191, 191, 0.8);
+  -moz-box-shadow: 5px 5px 8px 3px rgba(194, 191, 191, 0.8);
+}
+
+.logoutLink {
+  color: gray;
+  font-weight: 500;
+  text-align: center;
+}
+
+.userAvatar {
+  width: 45px;
+  margin-right: 5px;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+  }
+
+  .main:disabled {
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  .responsiveIcon {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .navIcon {
+    font-size: 26px;
+    color: #64e744;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .notiMessages {
+    width: 55%;
+    justify-content: space-evenly;
+  }
+
+  .notiBox {
+    top: 50px;
+    left: 50px;
+    width: 250px;
+  }
+
+  .notification,
+  .logoutLink,
+  .profile > span {
+    font-size: 10pt;
+  }
+
+  .profile {
+    width: 45%;
+  }
+
+  .logout {
+    top: 55px;
+    left: 70%;
+    width: 75px;
+  }
+
+  .userAvatar {
+    width: 40px;
+  }
+}
+
+/* Media Query 601px - 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .main {
+    width: 100%;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .notiBox {
+    top: 8%;
+    left: 37%;
+    width: 250px;
+  }
+
+  .notification,
+  .logoutLink,
+  .profile > span {
+    font-size: 10pt;
+  }
+
+  .profile {
+    width: 35%;
+  }
+
+  .logout {
+    top: 9%;
+    left: 79%;
+  }
+
+  .userAvatar {
+    width: 40px;
+  }
+}
+
+/* Media Query 769px - 1080px */
+@media only screen and (min-width: 769px) and (max-width: 1080px) {
+  .main {
+    width: 100%;
+  }
+  .notiBox {
+    top: 8%;
+    left: 42%;
+  }
+  .profile {
+    width: 28%;
+  }
+
+  .logout {
+    top: 9%;
+    left: 83%;
+  }
+}

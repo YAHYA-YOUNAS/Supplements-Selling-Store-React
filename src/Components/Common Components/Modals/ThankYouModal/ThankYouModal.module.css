@@ -1,0 +1,17 @@
+.main {
+  text-align: center;
+  width: 500px;
+  color: #939393;
+}
+
+.main > h2 {
+  color: #5f6380;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    width: 270px;
+    font-size: 10pt;
+  }
+}

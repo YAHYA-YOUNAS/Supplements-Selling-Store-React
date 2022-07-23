@@ -1,0 +1,129 @@
+#formFileUpload {
+  height: 15rem;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+#formFileUpload > div:first-child {
+  width: 40%;
+  height: 100%;
+}
+
+#inputFileUpload {
+  display: none;
+}
+
+#labelFileUpload {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #cbd5e1;
+  background-color: #f7f7f7;
+}
+
+#labelFileUpload > p {
+  border: none;
+}
+
+#labelFileUpload.dragActive {
+  background-color: #ffffff;
+}
+
+#dragFileElement {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* Progress bar */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.progressContainer {
+  width: 100%;
+  color: #363a43;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 9px;
+  font-weight: normal;
+  font-size: 14px;
+  color: #363a43;
+}
+
+.fileName {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.uploadList {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f7f7f7;
+  border: 0.1rem solid #cbd5e1;
+  border-radius: 0.2rem;
+  padding: 10px;
+}
+
+.progressText {
+  color: #7eb631;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#uploadButton {
+  position: absolute;
+  bottom: -32%;
+  left: 10%;
+  width: 100px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  background-color: #8b8ea3;
+}
+
+#uploadButton:hover {
+  opacity: 0.8;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  #formFileUpload {
+    height: 18rem;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  #formFileUpload > div:first-child {
+    width: 100%;
+    height: 80%;
+  }
+}

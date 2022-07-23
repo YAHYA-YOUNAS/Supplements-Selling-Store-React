@@ -1,0 +1,73 @@
+.main {
+  width: fit-content;
+}
+
+.main > div > img {
+  width: 250px;
+  height: 280px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -33px;
+}
+
+.viewButton,
+.selectButton {
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 20px;
+  color: white;
+  background-color: #8597ad;
+}
+
+.selectButton {
+  background-color: #51ce10 !important;
+}
+
+.viewButton:hover,
+.selectButton:hover {
+  color: white;
+  background-color: #bdbdc6 !important;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    width: 100%;
+  }
+  .main > div > img {
+    width: 250px;
+    height: 300px;
+  }
+  .buttons {
+    width: 70%;
+    margin: -33px auto auto auto;
+  }
+
+  .viewButton,
+  .selectButton {
+    width: fit-content;
+  }
+}
+
+/* Media Query 601px - 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .main > div > img {
+    width: 200px;
+    height: 220px;
+    margin: 0 auto;
+  }
+}
+
+/* Media Query 769px - 1200px */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .main > div > img {
+    width: 200px;
+    height: 220px;
+  }
+}

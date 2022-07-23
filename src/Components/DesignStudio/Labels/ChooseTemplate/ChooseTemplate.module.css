@@ -1,0 +1,135 @@
+.main {
+  padding: 15px;
+  margin-top: -20px;
+  background-color: #ecf1f7;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.main > h4 {
+  color: #5f6380;
+}
+
+.main > hr {
+  margin-top: 3%;
+  width: 100%;
+  border: 1px linear #939393;
+}
+
+.labels {
+  width: 95%;
+  margin: 0 auto;
+  height: 550px;
+  padding: 5px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px 25px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.labels::-webkit-scrollbar {
+  width: 5px;
+}
+
+.labels::-webkit-scrollbar-thumb {
+  background-color: #939393;
+  border-radius: 20px;
+}
+
+.requestLabel {
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.requestLabel > span {
+  margin-top: -15px;
+}
+
+.button {
+  margin-top: 3%;
+  width: 120px;
+  cursor: pointer;
+  background-color: #51ce10;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #bdbdc6 !important;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    width: 100%;
+    margin-left: -15px;
+    font-size: 10pt;
+  }
+
+  .labels {
+    justify-content: space-evenly;
+    height: 730px;
+    padding: 5px;
+  }
+
+  .labels::-webkit-scrollbar {
+    display: none;
+  }
+
+  .requestLabel {
+    width: 100%;
+    padding: 0;
+  }
+
+  .button {
+    margin-top: 5%;
+  }
+}
+
+/* Media Query 601px - 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .main {
+    width: 100%;
+    margin-left: -15px;
+  }
+
+  .labels {
+    justify-content: space-evenly;
+    height: 730px;
+    padding: 5px;
+  }
+
+  .labels::-webkit-scrollbar {
+    display: none;
+  }
+
+  .requestLabel {
+    width: 100%;
+    padding: 0;
+  }
+
+  .button {
+    margin-top: 5%;
+  }
+}
+
+/* Media Query 769px - 1450px */
+@media only screen and (min-width: 769px) and (max-width: 1450px) {
+  .main {
+    width: 98%;
+  }
+  .main > img {
+    width: 200px;
+    height: 220px;
+  }
+  .labels {
+    justify-content: space-around;
+  }
+}

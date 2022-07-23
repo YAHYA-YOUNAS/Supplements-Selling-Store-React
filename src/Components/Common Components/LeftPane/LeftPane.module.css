@@ -1,0 +1,135 @@
+.leftPane {
+  background-color: #ffffff;
+  width: 235px;
+  /* min-height: 100vh; */
+  height: 2000px;
+  box-shadow: 5px 10px 8px 0px rgba(190, 190, 190, 0.4);
+  -webkit-box-shadow: 5px 10px 8px 0px rgba(190, 190, 190, 0.4);
+  -moz-box-shadow: 5px 10px 8px 0px rgba(190, 190, 190, 0.4);
+  border-top: none;
+}
+
+.leftPane > div > hr {
+  width: 70%;
+  border: 1px solid #dee1ea;
+}
+
+.logo {
+  margin: -60px 0 0 15px;
+}
+
+.cross {
+  display: none;
+}
+
+.leftNav {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.navLink {
+  margin-top: 2px;
+  color: gray;
+}
+
+.active {
+  border-radius: 8px;
+  background-color: #64e744;
+  color: white;
+  width: 80%;
+  margin-left: 20%;
+}
+
+.navLink:hover {
+  border-radius: 8px;
+  background-color: #64e744;
+  color: white;
+}
+
+.heading {
+  color: #5f6380;
+  text-align: center;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .leftPane {
+    display: none;
+  }
+
+  .leftNav {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .responsiveLeftPane {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #dee1ea;
+    min-height: 100vh;
+    box-shadow: 5px 10px 8px 0px rgba(190, 190, 190, 0.4);
+    -webkit-box-shadow: 5px 10px 8px 0px rgba(190, 190, 190, 0.4);
+    -moz-box-shadow: 5px 10px 8px 0px rgba(190, 190, 190, 0.4);
+    border-top: none;
+    font-size: 10pt;
+  }
+
+  .logo {
+    width: fit-content;
+    margin: 5% auto;
+  }
+
+  .cross {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 22px;
+    color: #51ce10;
+  }
+
+  .cross:hover {
+    color: darkgray;
+  }
+
+  .active {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+
+  .navLink {
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid grey;
+  }
+}
+
+/* Media Query 601px - 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .leftPane {
+    width: 200px;
+    font-size: 11pt;
+  }
+
+  .leftPane > div > hr {
+    width: 75%;
+  }
+
+  .logo {
+    margin: -60px 0 0 0;
+  }
+
+  .active {
+    width: 75%;
+    margin-left: 18%;
+  }
+
+  .leftNav {
+    padding: 0;
+  }
+}

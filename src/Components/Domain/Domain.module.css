@@ -1,0 +1,156 @@
+.main {
+  box-sizing: border-box;
+  width: 82%;
+  float: right;
+  padding: 20px;
+}
+
+.forms {
+  width: 80%;
+  margin: 5% 0 0 10%;
+}
+
+.heading {
+  width: fit-content;
+  margin-left: 5%;
+  color: #86949f;
+}
+
+.form {
+  padding: 20px;
+  background-color: white;
+}
+
+.form h4 {
+  font-weight: bold;
+  color: #5f6380;
+}
+
+.form > hr {
+  border: 1px solid #dee1ea;
+}
+
+.form > input {
+  width: 65%;
+  margin-top: 2%;
+  border-radius: 3px;
+  border: 3px solid rgb(207, 206, 206);
+  outline: none;
+  border-right: none;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.form > input:focus {
+  border: 3px solid rgb(163, 162, 162);
+}
+
+.form > button {
+  cursor: pointer;
+  border: none;
+  width: 100px;
+  padding: 13px;
+  font-weight: bold;
+  color: white;
+  background-color: #51ce10;
+}
+
+.form > button:hover,
+.available > button:hover {
+  color: white;
+  background-color: #bdbdc6 !important;
+}
+
+.notAvailable,
+.available {
+  margin-top: 3%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.notAvailable > span {
+  color: red;
+  font-weight: 500;
+}
+
+.available > span {
+  color: #51ce10;
+  font-weight: 500;
+}
+
+.available > button {
+  cursor: pointer;
+  margin-left: 5px;
+  border: none;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  background-color: #51ce10;
+}
+
+/* Media Query 350px - 600px */
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .main {
+    width: 100%;
+    float: none;
+    margin-top: 70px;
+    font-size: 10pt;
+  }
+
+  .forms {
+    width: 100%;
+    margin: 5% 0 0 0;
+  }
+
+  .form > button {
+    width: 90px;
+  }
+
+  .available {
+    width: 72%;
+  }
+
+  .available > button {
+    width: 100px;
+  }
+}
+
+/* Media Query 601px - 768px */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .main {
+    width: 66%;
+    font-size: 10pt;
+  }
+
+  .forms {
+    width: 95%;
+    margin: 5% 0 0 5%;
+  }
+
+  .available {
+    width: 90%;
+  }
+  .available > button {
+    width: 80px;
+  }
+}
+
+/* Media Query 769px - 1200px */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .main {
+    width: 70%;
+  }
+  .heading {
+    margin-left: 0;
+  }
+
+  .available {
+    width: 75%;
+  }
+
+  .available > button {
+    width: 80px;
+  }
+}
